@@ -1,4 +1,5 @@
 import service.HelloWorldService;
+import service.RegionRestService;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -11,6 +12,7 @@ public class RestApplication extends Application{
     public Set<Class<?>> getClasses() {
         HashSet<Class<?>> h = new HashSet<>();
         h.add(HelloWorldService.class);
+        h.add(RegionRestService.class);
         return h;
     }
 }
