@@ -7,9 +7,13 @@ import java.util.UUID;
 
 @Entity
 public class Region {
-    private Integer id;
+    public Region() {
+    }
 
     @Id
+    @GeneratedValue
+    private Integer id;
+
     public Integer getId() {
         return id;
     }
